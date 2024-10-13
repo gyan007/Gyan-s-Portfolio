@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+    
+          .card:hover {
+            transform: translateY(-10px) scale(1.05);
+            /* Makes card pop up */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            /* Adds shadow for a 3D effect */
+          }
+    
+          /* Remove initial hidden state of images and card body */
+          .card img {
+            transform: scale(1);
+            transition: transform 0.5s ease;
+            /* Smooth scaling effect */
+          }
+    
+          .card-body {
+            opacity: 1;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+          }
+    
+          /* Button hover effect */
+          .btn-group button {
+            transition: background-color 0.3s ease, color 0.3s ease;
+          }
+    
+          .btn-group button:hover {
+            background-color: #007bff;
+            color: white;
+            /* Button style changes on hover */
+          }
+    
+          /* Additional styles to structure the page */
+          .container {
+            max-width: 1200px;
+            margin: 0 auto;
+          }
+    
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+          }
+    
+          .col {
+            flex: 1;
+            min-width: 250px;
+            margin: 15px;
+          }
+    
+          .card img {
+            width: 100%;
+            height: auto;
+          }
+    
+          .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 10px;
+          }       
+    </style>
+</head>
+<body>
+    <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+        <h2 class="h2 fw-light mb-4">Certificates</h2>
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+              <!-- Certificate 1 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/Softwareengineeringcertificate.png" alt="Software Engineering Certificate">
+                  <div class="card-body">
+                    <h5>Software Engineering - NPTEL</h5>
+                    <p class="card-text">In this course, I learned about software development methodologies,
+                      requirements engineering, design patterns and testing strategies.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs122/Course/NPTEL23CS122S4451202120178817.pdf">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Certificate 2 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/DBMScertificate.png" alt="Database Management Certificate">
+                  <div class="card-body">
+                    <h5>Database Management System - NPTEL</h5>
+                    <p class="card-text">In this course, I learned about database design, normalization, SQL
+                      queries, transaction management.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs21/Course/NPTEL24CS21S65070281930077511.pdf">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certificate 3 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/Cloudcomputingcertificate.png" alt="Cloud Computing Certificate">
+                  <div class="card-body">
+                    <h5>Cloud Computing - NPTEL</h5>
+                    <p class="card-text">In this course, I learned about the fundamentals of cloud
+                      computing, virtualization, cloud service models, cloud infrastructure and security.
+                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://archive.nptel.ac.in/content/noc/NOC23/SEM2/Ecertificates/106/noc23-cs89/Course/NPTEL23CS89S64510238520178817.pdf">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 4 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/Data science for engineers.png" alt="Data Science for Engineers Certificate">
+                  <div class="card-body">
+                    <h5>Data Science for Engineers - NPTEL</h5>
+                    <p class="card-text">In this course, I learned about data analysis, statistical methods,
+                      machine learning algorithms, visualization, big data processing.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs133/Course/NPTEL24CS133S44480309502670396.pdf">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 5 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/complete c++.png" alt="The Complete Introduction to C++ Programming">
+                  <div class="card-body">
+                    <h5>The Complete Introduction to C++ Programming - Udemy</h5>
+                    <p class="card-text">In this course, I gained a understanding of C++
+                      , object-oriented programming, data
+                      structures, memory management, and algorithm. </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.udemy.com/certificate/UC-91e9dd57-9a2a-4ff5-8a20-c33ac66bdf64/">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 6 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/java.png" alt="Introduction to Java">
+                  <div class="card-body">
+                    <h5>Introduction to Java - Coursera</h5>
+                    <p class="card-text">In this course, I learned the fundamentals of Java programming,
+                      including object-oriented principles, data structures, exception handling.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/BPWIFXD2VYC5">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 7 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/java crash course.png" alt="Java Training Crash Course">
+                  <div class="card-body">
+                    <h5>Java Training Course - Udemy</h5>
+                    <p class="card-text">In this course, I learned the core concepts of Java programming,
+                      variables, loops, conditional statements, object-oriented
+                      programming, and data structures.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.udemy.com/certificate/UC-ea4d4cd2-4a1a-4572-ad8a-174998264f86/">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 8 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/python.png" alt="Get Started with Python">
+                  <div class="card-body">
+                    <h5>Get Started with Python - Coursera</h5>
+                    <p class="card-text">In this course, I learned basics of Python programming,
+                      including data types, functions, libraries and control flow.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/8QKRGJEN5FY9">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 9 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/HTMLandCSSindepthcertificate.png" alt="HTML and CSS in depth">
+                  <div class="card-body">
+                    <h5>HTML and CSS in depth - Coursera</h5>
+                    <p class="card-text">In this course, I learned advanced concepts of HTML and CSS,
+                      focusing on semantic HTML, responsive web design, CSS layouts, and animations. </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/DARPDZ8HJ9UY">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 10 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/javascript.png" alt="Master Javascript from Basics to Advanced">
+                  <div class="card-body">
+                    <h5>Javascript (Basics to Advanced) - Udemy</h5>
+                    <p class="card-text">In this course, I learned JavaScript fundamental topics like
+                      variables, functions, and event handling, as well as
+                      asynchronous programming and object-oriented
+                      JavaScript.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.udemy.com/certificate/UC-7cccd212-f06d-4e9a-a247-6a2cf6a247a2/">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 11 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/javaScriptbasichackerrank.png" alt="JavaScript (Basic)">
+                  <div class="card-body">
+                    <h5>JavaScript (Basic) - HackerRank</h5>
+                    <p class="card-text">In this course, I learned the fundamental concepts of JavaScript,
+                      including variables, data types, loops, functions, and basic problem-solving
+                      techniques. </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.hackerrank.com/certificates/iframe/2faa9eff882b">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 12 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/javaScriptintermediatehackerrank.png" alt="JavaScript (Intermediate)">
+                  <div class="card-body">
+                    <h5>JavaScript (Intermediate) - HackerRank</h5>
+                    <p class="card-text">In this course, I built on my JavaScript knowledge by exploring
+                      intermediate concepts such as higher-order functions, closures, asynchronous
+                      programming, and (DOM).</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.hackerrank.com/certificates/iframe/5829159d7df9">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certificate 13 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/sql udemy.png" alt="SQL - The Complete Introduction to SQL Programming">
+                  <div class="card-body">
+                    <h5>SQL Programming - Udemy</h5>
+                    <p class="card-text">In this course, I learned the fundamentals of SQL programming,
+                      covering topics such as database design, querying data,
+                      filtering results, joining tables, and aggregating data.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.udemy.com/certificate/UC-a000edd6-4147-4284-9289-8cb50215100b/">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 14 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/introductionToDatabases.png" alt="Introduction to Databases">
+                  <div class="card-body">
+                    <h5>Introduction to Databases - Coursera</h5>
+                    <p class="card-text">In this course, I learned the fundamental concepts of databases,
+                      including RDBMS, SQL, normalization, transaction management.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/SZMK1XXW9WPA">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 15 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/sql advanced.png" alt="SQL (Advanced)">
+                  <div class="card-body">
+                    <h5>SQL (Advanced) - HackerRank</h5>
+                    <p class="card-text">In this course, I advanced my SQL skills by exploring complex
+                      queries, including window functions, common table expressions (CTEs), and advanced
+                      joins.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.hackerrank.com/certificates/iframe/40665fb62d50">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 16 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/mongoDB.png" alt="Introduction to MongoDB">
+                  <div class="card-body">
+                    <h5>Introduction to MongoDB - Coursera</h5>
+                    <p class="card-text">In this course, I learned the fundamentals of MongoDB, data
+                      modeling, and CRUD operations.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/L3QXPGF3CXG3">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 17 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/Introductiontomachinelearningcertificate.png" alt="Machine Learning Certificate">
+                  <div class="card-body">
+                    <h5>Machine Learning - Coursera</h5>
+                    <p class="card-text">In this course, I learned concepts of machine
+                      learning, including supervised and unsupervised learning, feature selection, model
+                      evaluation.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/TZPAT4WB39Z7">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 18 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/structureofcomputer.png" alt="Basic Structure of Computers Certificate">
+                  <div class="card-body">
+                    <h5>Basic Structure of Computers - Udemy</h5>
+                    <p class="card-text">In this course, I learned the fundamental components of computer
+                      systems. </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.udemy.com/certificate/UC-158bc801-49d3-4aa6-9707-32216fb93a03/">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <!-- Certificate 19 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/internetWorking.png"
+                    alt="How the Internet Works & the Web Development Process Certificate">
+                  <div class="card-body">
+                    <h5>How the Internet Works & the Web Development Process - Udemy</h5>
+                    <p class="card-text">In this course, I learned the essential concepts of how the
+                      internet functions, networking fundamentals and client-server
+                      architecture.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.udemy.com/certificate/UC-6f0a8b7c-6389-4cb5-bfe4-46e5e492c8e9/">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Certificate 20 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/Cloud computing course.png"
+                    alt="How the Internet Works & the Web Development Process Certificate">
+                  <div class="card-body">
+                    <h5>Cloud computing Foundations - Coursera</h5>
+                    <p class="card-text">In this course, I learned about the fundamentals of cloud
+                        computing, virtualization, cloud service models, cloud infrastructure and security.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/279W9Q63JU3Z">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certificate 21 -->
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/googleSEO.png" alt="Introduction to Google SEO Certificate">
+                  <div class="card-body">
+                    <h5>Introduction to Google SEO - Coursera</h5>
+                    <p class="card-text">In this, I learned the basics of SEO and its importance for online
+                      visibility. It included keyword research,
+                      on-page optimization and analyzing SEO performance.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a href="https://www.coursera.org/account/accomplishments/verify/5NBVGRVZJ0P1">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
