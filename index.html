@@ -1,537 +1,1487 @@
 <!DOCTYPE html>
 <html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+      />
+    </noscript>
+    <link href="css/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
-    media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" />
-  </noscript>
-  <link href="css/font-awesome/css/all.min.css" rel="stylesheet">
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <link href="css/aos.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/form.css" rel="stylesheet">
-  <noscript>
-    <style type="text/css">
-      [data-aos] {
-        opacity: 1 !important;
-        transform: translate(0) scale(1) !important;
-      }
-    </style>
-  </noscript>
-</head>
-
-<body class="bg-light" id="top">
-  <header class="d-print-none">
-    <div class="container text-center text-lg-left">
-      <div class="pt-4 clearfix">
-        <h1 class="site-title mb-0">Gyan Thakur</h1>
-        <div class="site-nav">
-          <nav role="navigation">
-            <ul class="nav justify-content-center">
-              <li class="nav-item"><a class="nav-link" href="#about" title="About"><span
-                    class="menu-title">About</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span
-                    class="menu-title">Skills</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span
-                    class="menu-title">Projects</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span
-                    class="menu-title">Education</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span
-                    class="menu-title">Portfolio</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#content" title="Certifications"><span
-                class="menu-title">Certifications</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#references" title="References"><span
-                    class="menu-title">References</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span
-                    class="menu-title">Contact</span></a>
-              </li>
-            </ul>
-          </nav>
+  <body class="bg-light" id="top">
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="pt-4 clearfix">
+          <h1 class="site-title mb-0">Gyan Thakur</h1>
+          <div class="site-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about" title="About"
+                    ><span class="menu-title">About</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills" title="Skills"
+                    ><span class="menu-title">Skills</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience" title="Experience"
+                    ><span class="menu-title">Projects</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#education" title="Education"
+                    ><span class="menu-title">Education</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio" title="Portfolio"
+                    ><span class="menu-title">Portfolio</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#content" title="Certifications"
+                    ><span class="menu-title">Certifications</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#references" title="References"
+                    ><span class="menu-title">References</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" title="Contact"
+                    ><span class="menu-title">Contact</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="page-content">
-    <div class="container">
-      <div class="resume-container">
-        <div class="shadow-1-strong bg-white my-5" id="intro">
-          <div class="bg-info text-white">
-            <div class="cover bg-image"><img src="images/header-background.jpg" />
-              <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);backdrop-filter: blur(2px);">
-                <div class="text-center p-5">
-                  <div class="avatar p-1"><img class="img-thumbnail shadow-2-strong" src="images/pic.jpg" width="160"
-                      height="160" /></div>
-                  <div class="header-bio mt-3">
-                    <div data-aos="zoom-in" data-aos-delay="0">
-                      <h2 class="h1">Gyan Thakur</h2>
+    </header>
+    <div class="page-content">
+      <div class="container">
+        <div class="resume-container">
+          <div class="shadow-1-strong bg-white my-5" id="intro">
+            <div class="bg-info text-white">
+              <div class="cover bg-image">
+                <img src="images/header-background.jpg" />
+                <div
+                  class="mask"
+                  style="
+                    background-color: rgba(0, 0, 0, 0.7);
+                    backdrop-filter: blur(2px);
+                  "
+                >
+                  <div class="text-center p-5">
+                    <div class="avatar p-1">
+                      <img
+                        class="img-thumbnail shadow-2-strong"
+                        src="images/pic.jpg"
+                        width="160"
+                        height="160"
+                      />
                     </div>
-                    <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
-                      <nav role="navigation">
-                        <ul class="nav justify-content-center">
-                          <li class="nav-item"><a class="nav-link" href="https://twitter.com/gboundela"
-                              title="Twitter"><i class="fab fa-twitter"></i><span
-                                class="menu-title sr-only">Twitter</span></a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/gyanush_boundela"
-                              title="Facebook"><i class="fab fa-facebook"></i><span
-                                class="menu-title sr-only">Facebook</span></a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link"
-                              href="https://www.instagram.com/sarcastic_introvert_007" title="Instagram"><i
-                                class="fab fa-instagram"></i><span class="menu-title sr-only">Instagram</span></a>
-                          </li>
-                          <li class="nav-item"><a class="nav-link" href="https://github.com/gyan007" title="Github"><i
-                                class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-                          </li>
-                        </ul>
-                      </nav>
+                    <div class="header-bio mt-3">
+                      <div data-aos="zoom-in" data-aos-delay="0">
+                        <h2 class="h1">Gyan Thakur</h2>
+                      </div>
+                      <div
+                        class="header-social mb-3 d-print-none"
+                        data-aos="zoom-in"
+                        data-aos-delay="200"
+                      >
+                        <nav role="navigation">
+                          <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                              <a
+                                class="nav-link"
+                                href="https://twitter.com/gboundela"
+                                title="Twitter"
+                                ><i class="fab fa-twitter"></i
+                                ><span class="menu-title sr-only"
+                                  >Twitter</span
+                                ></a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link"
+                                href="https://www.facebook.com/gyanush_boundela"
+                                title="Facebook"
+                                ><i class="fab fa-facebook"></i
+                                ><span class="menu-title sr-only"
+                                  >Facebook</span
+                                ></a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link"
+                                href="https://www.instagram.com/sarcastic_introvert_007"
+                                title="Instagram"
+                                ><i class="fab fa-instagram"></i
+                                ><span class="menu-title sr-only"
+                                  >Instagram</span
+                                ></a
+                              >
+                            </li>
+                            <li class="nav-item">
+                              <a
+                                class="nav-link"
+                                href="https://github.com/gyan007"
+                                title="Github"
+                                ><i class="fab fa-github"></i
+                                ><span class="menu-title sr-only"
+                                  >Github</span
+                                ></a
+                              >
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                      <div class="d-print-none">
+                        <a
+                          class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3"
+                          href="Gyan_thakur_Resume.pdf"
+                          data-aos="fade-right"
+                          data-aos-delay="700"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-file-person mr-2 mb-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+                            />
+                            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                          </svg>
+                          Download Resume</a
+                        ><a
+                          class="btn btn-info btn-lg shadow-sm mt-1"
+                          href="#contact"
+                          data-aos="fade-left"
+                          data-aos-delay="700"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-mortarboard mb-1"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"
+                            />
+                            <path
+                              d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"
+                            />
+                          </svg>
+                          Hire Me</a
+                        >
+                      </div>
                     </div>
-                    <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3"
-                        href="Gyan_thakur_Resume.pdf" data-aos="fade-right" data-aos-delay="700"><svg
-                          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-file-person mr-2 mb-1" viewBox="0 0 16 16">
-                          <path
-                            d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                          <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                        </svg> Download Resume</a><a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact"
-                        data-aos="fade-left" data-aos-delay="700"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                          height="16" fill="currentColor" class="bi bi-mortarboard mb-1" viewBox="0 0 16 16">
-                          <path
-                            d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z" />
-                          <path
-                            d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z" />
-                        </svg> Hire Me</a></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="about">
-          <div class="about-section">
-            <div class="row">
-              <div class="col-md-6">
-                <h2 class="h2 fw-light mb-4">About Me</h2>
-                <p>Hello! I’m Gyan Thakur. I am passionate about Artificial Intelligence and Machine Learning. I am a skilled 
-                <strong>AI/ML developer</strong>. I am a quick learner and a team worker that gets the job done.
-                </p>
-                <p>I am adept at leveraging data-driven insights and rapidly building predictive models to solve real-world problems.</p>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="about">
+            <div class="about-section">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="h2 fw-light mb-4">About Me</h2>
+                  <p>
+                    I am <strong>Gyan Thakur</strong>, a passionate and
+                    detail-oriented developer specializing in both
+                    <strong>Artificial Intelligence/Machine Learning</strong>
+                    and scalable <strong>Backend Engineering</strong>. I
+                    leverage data-driven insights to rapidly build and deploy
+                    predictive models while ensuring the robust infrastructure
+                    to support them.
+                  </p>
 
-              </div>
-              <div class="col-md-5 offset-lg-1">
-                <div class="row mt-2">
-                  <h2 class="h2 fw-light mb-4">Bio</h2>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Age</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">22</div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Email</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">gyanthakurthakur@gmail.com</div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Phone</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">+91-7016184175</div>
-                  </div>
-                  <div class="col-sm-5">
-                    <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted"
-                        style="width:24px;opacity:0.85;"></i> Address</div>
-                  </div>
-                  <div class="col-sm-7">
-                    <div class="pb-2">Ashwini Bunglow, Mohan nagar, Katraj, Pune, India</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                  <p>
+                    As a backend-focused developer, I have hands-on experience
+                    building scalable <strong>REST APIs</strong> and
+                    <strong>event-driven microservices</strong> using
+                    <strong>FastAPI</strong> and <strong>Node.js</strong>. I
+                    possess a proven track record of improving API latency and
+                    throughput in production environments through implementing
+                    <strong>caching</strong>, <strong>async pipelines</strong>,
+                    and <strong>CI/CD-driven deployments</strong>.
+                  </p>
 
-
-        <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
-          <div class="skills-section">
-            <h2 class="h2 fw-light mb-4">Professional Skills</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mb-3"><span class="fw-bolder">C++</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="100"
-                      data-aos-anchor=".skills-section" style="width: 65%;" aria-valuenow="95" aria-valuemin="0"
-                      aria-valuemax="100">Master</div>
-                  </div>
+                  <p>
+                    With strong fundamentals in <strong>AI/ML</strong>,
+                    <strong>SQL</strong>, and <strong>system design</strong>, I
+                    am ready to own end-to-end components, from model
+                    development and predictive analytics to delivering highly
+                    performant and stable production systems.
+                  </p>
                 </div>
-                <div class="mb-3"><span class="fw-bolder">Python</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="200"
-                      data-aos-anchor=".skills-section" style="width: 55%" aria-valuenow="85" aria-valuemin="0"
-                      aria-valuemax="100">Intermediate</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Database Management</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
-                      data-aos-anchor=".skills-section" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100">Master</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Machine Learning</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
-                      data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100">Master</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Deep Learning</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-info" role="progressbar" data-aos="zoom-in-right" data-aos-delay="300"
-                      data-aos-anchor=".skills-section" style="width: 85%" aria-valuenow="75" aria-valuemin="0"
-                      aria-valuemax="100">Master</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="mb-3"><span class="fw-bolder">Natural Language Processing</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 65%" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Data Structure</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="500" data-aos-anchor=".skills-section" style="width: 78%" aria-valuenow="85"
-                      aria-valuemin="0" aria-valuemax="100">Expert</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Artificial Intelligence</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="75"
-                      aria-valuemin="0" aria-valuemax="100">Expert</div>
-                  </div>
-                </div>
-                <div class="mb-3"><span class="fw-bolder">Generative AI</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="400" data-aos-anchor=".skills-section" style="width: 65%" aria-valuenow="90"
-                      aria-valuemin="0" aria-valuemax="100">Intermediate</div>
-                  </div>
-                </div>
-                  <div class="mb-3"><span class="fw-bolder">Large Language Model</span>
-                  <div class="progress my-2 rounded" style="height: 20px">
-                    <div class="progress-bar bg-secondary" role="progressbar" data-aos="zoom-in-right"
-                      data-aos-delay="600" data-aos-anchor=".skills-section" style="width: 95%" aria-valuenow="75"
-                      aria-valuemin="0" aria-valuemax="100">Expert</div>
+                <div class="col-md-5 offset-lg-1">
+                  <div class="row mt-2">
+                    <h2 class="h2 fw-light mb-4">Bio</h2>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="far fa-calendar-alt pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        Age
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="pb-2">22</div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="far fa-envelope pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        Email
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="pb-2">gyanthakurthakur@gmail.com</div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="fas fa-phone pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        Phone
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="pb-2">+91-7016184175</div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="pb-2 fw-bolder">
+                        <i
+                          class="fas fa-map-marker-alt pe-2 text-muted"
+                          style="width: 24px; opacity: 0.85"
+                        ></i>
+                        Address
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="pb-2">
+                        Ashwini Bunglow, Mohan nagar, Katraj, Pune, India
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        
-
-
-        <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
-          <div class="work-experience-section">
-            <h2 class="h2 fw-light mb-4">Projects</h2>
-            <div class="timeline">
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Text file compressor <span class="text-muted h6">as Project Based
-                      Learning</span></div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">Sep, 2024</div>
-                  <div>Built highly performant website for text file compression. Worked with
-                    development team to implement Huffman coding concept using HTML, CSS and modern JavaScript.</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Student portal Website<span class="text-muted h6"> as Project Based
-                      Learning</span></div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">Jul, 2024</div>
-                  <div>This is a comprehensive website designed to streamline the signup and login process
-                    for students accessing educational resources and services. Developed with the aim of providing a
-                    seamless user experience, this offers robust features for user registration, authentication,
-                    and profile management, ensuring security and convenience for students and educators alike.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="shadow-1-strong bg-white my-5 p-5" id="education">
-          <div class="education-section">
-            <h2 class="h2 fw-light mb-4">Education</h2>
-            <div class="timeline">
-              <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Bachelor of Technology <span class="text-muted h6">from Bharati vidyapeeth college of
-                      engineering</span> </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">2022 - Present</div>
-                  <div>Studied in computer engineering discipline.</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Intermediate <span class="text-muted h6">from Vidya Niketan</span>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
+            <div class="skills-section">
+              <h2 class="h2 fw-light mb-4">Professional Skills</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <span class="fw-bolder">C++</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="100"
+                        data-aos-anchor=".skills-section"
+                        style="width: 65%"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Python</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="200"
+                        data-aos-anchor=".skills-section"
+                        style="width: 55%"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Intermediate
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">JAVA</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 95%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Database Management</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 75%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="mb-3">
+                    <span class="fw-bolder"
+                      >MySQL, PostgreSQL, MongoDB, ChromaDB
+                    </span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 80%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Machine Learning</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 95%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Deep Learning</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="300"
+                        data-aos-anchor=".skills-section"
+                        style="width: 85%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">2019 - 2020</div>
-                  <div>Studied in science discipline</div>
-                </div>
-              </div>
-              <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
-                <div class="timeline-head px-4 pt-3">
-                  <div class="h5">Matriculation <span class="text-muted h6">from D.A.V Public School</span> </div>
-                </div>
-                <div class="timeline-body px-4 pb-4">
-                  <div class="text-muted text-small mb-3">2017-18</div>
-                  <div>Studied all the subjects which where important for science discipline.</div>
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <span class="fw-bolder">FastAPI REST, APIs, Node.js </span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="400"
+                        data-aos-anchor=".skills-section"
+                        style="width: 85%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Master
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder"
+                      >Cloud fundamentals, AWS (EC2/Lambda/S3)</span
+                    >
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="400"
+                        data-aos-anchor=".skills-section"
+                        style="width: 65%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Intermediate
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Natural Language Processing</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="400"
+                        data-aos-anchor=".skills-section"
+                        style="width: 75%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Intermediate
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <span class="fw-bolder">Data Structure</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="500"
+                        data-aos-anchor=".skills-section"
+                        style="width: 78%"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Expert
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Artificial Intelligence</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="600"
+                        data-aos-anchor=".skills-section"
+                        style="width: 95%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Expert
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Generative AI</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="400"
+                        data-aos-anchor=".skills-section"
+                        style="width: 65%"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Intermediate
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <span class="fw-bolder">Large Language Model</span>
+                    <div class="progress my-2 rounded" style="height: 20px">
+                      <div
+                        class="progress-bar bg-secondary"
+                        role="progressbar"
+                        data-aos="zoom-in-right"
+                        data-aos-delay="600"
+                        data-aos-anchor=".skills-section"
+                        style="width: 95%"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        Expert
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-
-        <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
-          <div class="portfolio-section">
-            <h2 class="h2 fw-light mb-4">Portfolio</h2>
-            <div class="row g-0">
-              <div class="col-md-6"><a href="https://github.com/gyan007/Student-portal1" target="_blank"><img class="img-fluid"
-                    src="images/project1.png" width="800" height="700" /></a></div>
-              <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                <div class="m-4 mt-md-2">
-                  <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript / PHP</p>
-                  <h3>Student Portal Website</h3>
-                  <p class="text-muted">Built highly performant website front end for a Student portal. Delivered
-                    codebase in HTML, CSS and modern JavaScript.</p>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+            <div class="work-experience-section">
+              <h2 class="h2 fw-light mb-4">Experience</h2>
+              <div class="timeline-head px-4 pt-3">
+                <div class="h5">
+                  Cere Labs Private Limited
+                  <span class="text-muted h6"
+                    >as Software Development Engineer (SDE) Intern</span
+                  >
+                </div>
+                <div class="text-muted text-small mb-3">
+                  June, 2025 - November 2025
                 </div>
               </div>
-            </div>
-            <div class="row g-0 portfolio-reverse">
-              <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-                <div class="m-4 mt-md-2 text-end">
-                  <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
-                  <h3>Portfolio website</h3>
-                  <p class="text-muted">Built highly performant website for my portfolio. Worked on front-end
-                    deliver codebase in HTML, CSS and modern JavaScript.</p>
-                </div>
+              <div class="timeline-head px-4 pt-3">
+                As an Intern at Cere Labs Pvt. Ltd. from June to November 2025 ,
+                I gained invaluable hands-on experience in full-stack
+                development, with a strong focus on Python-based automation and
+                building Contextual AI systems using Azure OpenAI. My main focus
+                was building advanced Contextual AI systems using Azure OpenAI
+                Service and hybrid memory (PostgreSQL/ChromaDB) architectures. I
+                successfully developed and containerized a stateful AI Assistant
+                with Hybrid RAG and Rolling Window Summarization , a reliable
+                FastAPI microservice. I was deeply involved in professional
+                software development practices, mastering industry-level coding
+                standards , implementing robust API and functional testing
+                methodologies , and improving my analytical thinking and
+                problem-solving skills. I successfully learned how decoupled
+                services are securely connected using REST and real-time sockets
+                , preparing me for future roles in the software and AI industry.
               </div>
-              <div class="col-md-6"><a href="https://gyan007.github.io/Gyan-s-Portfolio/" target="_blank"><img
-                    class="img-fluid" src="images/project2.png" width="800" height="500" /></a></div>
-            </div>
-            <div class="row g-0">
-              <div class="col-md-6"><a href="https://gyan007.github.io/Text-compressor/" target="_blank"><img
-                    class="img-fluid" src="images/project-3.png" width="800" height="500" /></a></div>
-              <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
-                <div class="m-4 mt-md-2">
-                  <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript / PHP</p>
-                  <h3>Text File Compressor</h3>
-                  <p class="text-muted">Built highly performant website for text file compression. Worked with
-                    development team to implement Huffman coding concept using HTML, CSS and modern JavaScript.</p>
+              <hr>
+              <div class="timeline">
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Queryfic - Contextual AI Assistant (Azure OpenAI & Hybrid
+                      Memory)
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">
+                      Oct, 2025- Nov 2025
+                    </div>
+                    <div class="text-muted text-small mb-3">
+                      Python, FastAPI, REST APIs, Azure OpenAI Service
+                      (GPT-4o-mini ), Prompt Engineering, ChromaDB, PostgreSQL
+                    </div>
+                    <div>
+                      I developed the Queryfic Conversational Assistant, a
+                      stateful AI application designed for highly accurate and
+                      contextual responses. I engineered the secure, streaming
+                      communication with Azure OpenAI Service (GPT-4o-mini) for
+                      efficient enterprise use. Crucially, I designed a Hybrid
+                      RAG system combining ChromaDB (Vector Store) for semantic
+                      search and PostgreSQL for conversation history. To
+                      maintain context, I implemented a Rolling Window
+                      Summarization module using Few-Shot Prompt techniques to
+                      condense recent conversation turns.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Callback URL Logger API (FastAPI & Docker)
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">
+                      Sep 2025 - Oct 2025
+                    </div>
+                    <div class="text-muted text-small mb-3">
+                      Python, FastAPI , REST APIs, SQLAlchemy (ORM), MySQL,
+                      Docker, docker-compose.yml
+                    </div>
+                    <div>
+                      I developed a critical, high-availability FastAPI
+                      microservice responsible for securely logging asynchronous
+                      event responses between systems. I ensured robust
+                      deployment by building a reproducible environment using
+                      Dockerfile and docker-compose.yml to link the FastAPI
+                      application with a dedicated MySQL container. To guarantee
+                      database reliability, I implemented SQLAlchemy ORM and
+                      utilized Python's @contextmanager for automatic, reliable
+                      database session management. I also enforced enterprise
+                      standards by implementing a robust /health endpoint to
+                      actively check database connectivity.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Collaborative Tasklist UI (React, Node.js/Socket.io &
+                      Real-time)
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">
+                      Aug 2025 - Sep 2025
+                    </div>
+                    <div class="text-muted text-small mb-3">
+                      HTML, CSS, JavaScript, React(v19), React Router,
+                      Node.js/Express, MySQL, REST APIs, Socket.io, Multer,
+                      Chokidar
+                    </div>
+                    <div>
+                      I developed a full-stack proof-of-concept for a
+                      collaborative task manager, showcasing my end-to-end
+                      development skills. I implemented a real-time architecture
+                      using a Node.js/Express server with Socket.io to instantly
+                      push live updates to the React frontend, triggered by file
+                      changes monitored by Chokidar. I designed API endpoints
+                      for CRUD operations and utilized Multer to handle secure
+                      file uploads, organizing them into task-specific
+                      directories. Furthermore, I built client-side
+                      authentication, secure routing using React Router and
+                      ProtectedRoute, and developed robust backend logic for
+                      complete task deletion, including the simultaneous
+                      recursive deletion of associated folders.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Manual Testing and Quality Assurance
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">
+                      Jul, 2025 - Aug 2025
+                    </div>
+                    <div class="text-muted text-small mb-3">
+                      Python, FastAPI, REST APIs, POSTMAN, Conversational Flow
+                      Validation, Context Maintenance, Response Accuracy,
+                      Performance Optimization (Response Time)
+                    </div>
+                    <div>
+                      I conducted rigorous manual testing on the company's
+                      proprietary LLM project (Queryfic), a distinct application
+                      from my development work. This involved validating the
+                      conversational flow, context maintenance, accuracy of LLM
+                      responses, and overall user experience for a core company
+                      service. Crucially, I also performed testing to identify
+                      bottlenecks and suggest methods to optimize the overall
+                      response time of the LLM application. This experience
+                      deepened my understanding of quality assurance and
+                      performance methodologies in AI product development.
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Google Reference Scraper App (Python Automation)
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Jun, 2025</div>
+                    <div class="text-muted text-small mb-3">
+                      Python, FastAPI, REST APIs, MySQL, Selenium
+                    </div>
+                    <div>
+                      I created an essential Python-based data acquisition tool
+                      to gather external context for our intelligence systems. I
+                      utilized the Google Custom Search API via the requests
+                      library for reliably indexing top search results. I also
+                      employed Selenium in headless mode to navigate and
+                      accurately extract content (title, main body text) from
+                      dynamically rendered web pages, which was crucial for
+                      external context gathering.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
+          <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
+            <div class="work-experience-section">
+              <h2 class="h2 fw-light mb-4">Projects</h2>
+              <div class="timeline">
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      AI Tutor platform
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2025</div>
+                    <div>
+                      Developed an interactive AI Tutor Platform using Python,
+                      FastAPI, and Streamlit. Engineered the backend with
+                      FastAPI to process student queries and manage LLM
+                      interactions. Integrated Large Language Model (LLM) APIs
+                      to provide intelligent, real-time academic support.
+                      Designed an intuitive user interface with Streamlit for a
+                      seamless learning experience. Implemented a real-time
+                      conversational flow to enable natural student-tutor
+                      dialogue. Managed the end-to-end cloud deployment for
+                      scalability and 24/7 accessibility.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Telecom Customer churn prediction
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Mar, 2025</div>
+                    <div>
+                      Developed a churn prediction model using an Artificial
+                      Neural Network (ANN) with Python and TensorFlow.Performed
+                      data preprocessing and feature scaling on the customer
+                      dataset using Pandas and Scikit-learn. Designed and
+                      trained a sequential ANN with ReLU/Sigmoid activations to
+                      accurately predict churn probability. Implemented a
+                      complete machine learning workflow, from data preparation
+                      and modeling to evaluation. Delivered a functional model
+                      capable of identifying at-risk customers to help improve
+                      retention strategies.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      AI travel planner
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2024</div>
+                    <div>
+                      Developed a full-stack AI Travel Planner with Python,
+                      FastAPI, and Streamlit. Built the backend using FastAPI to
+                      manage API integrations and itinerary logic. Integrated
+                      multiple external APIs: OSRM (routing), OpenWeatherMap
+                      (weather), and Foursquare (attractions). Designed an
+                      interactive and user-friendly frontend with Streamlit for
+                      easy trip planning. Managed the end-to-end deployment of
+                      the application on the Render cloud platform. Engineered
+                      features for route optimization, weather forecasts, and
+                      budget estimation.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Tasklist UI
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2024</div>
+                    <div>
+                      Developed a full-stack task management application using
+                      React.js, Node.js, Express.js, and MySQL. Engineered
+                      robust RESTful APIs with Node.js for handling task CRUD
+                      operations and user authentication. Designed and built a
+                      responsive, interactive frontend in React.js, creating
+                      reusable UI components like modals, tables, and sidebars.
+                      Integrated WebSockets using Socket.IO to enable real-time,
+                      bi-directional communication. Managed data persistence
+                      with MySQL database, designing schemas for efficient
+                      storage of tasks and user credentials. Managed the
+                      end-to-end deployment pipeline, hosting the
+                      frontend/backend on Render and the database on Clever
+                      Cloud. Enhanced the user experience with features like
+                      real-time search, filtering, and document handling
+                      capabilities.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      GyanBot– AI for Everyone
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2024</div>
+                    <div>
+                      Developed a high-speed conversational AI chatbot using
+                      Python, LLAMA 3.1, and Streamlit. Integrated the LLAMA 3.1
+                      model via the Groq API for real-time, context-aware
+                      responses. Built a seamless and interactive frontend for
+                      user interaction using the Streamlit framework. Engineered
+                      the response pipeline to achieve sub-second latency,
+                      enabling fluid conversations. Managed version control and
+                      deployment practices to ensure streamlined updates and
+                      accessibility.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Bangalore Property Price Prediction
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2024</div>
+                    <div>
+                      Developed an ML-powered web app for Bengaluru house price
+                      prediction using Python, Scikit-Learn, and Flask.
+                      Performed data preprocessing and feature engineering on a
+                      dataset of over 13,000 property records. Trained a
+                      regression model that achieved a 90%+ R² score, ensuring
+                      high prediction accuracy. Built a REST API with Flask to
+                      serve the trained machine learning model for real-time
+                      predictions. Designed a responsive frontend with HTML,
+                      CSS, and JavaScript to capture user inputs. Managed the
+                      end-to-end deployment of the application for public,
+                      online accessibility.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Movie Recommender
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2024</div>
+                    <div>
+                      Developed a machine learning-powered Movie Recommender
+                      using Python, Scikit-Learn, and Streamlit. Implemented a
+                      content-based filtering algorithm using cosine similarity
+                      and TF-IDF vectorization. Performed data preprocessing and
+                      feature extraction on large movie datasets to prepare for
+                      modeling. Designed an interactive and user-friendly
+                      frontend with Streamlit for real-time movie discovery.
+                      Optimized the recommendation pipeline to ensure fast and
+                      accurate retrieval of movie suggestions.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Text file compressor
+                      <span class="text-muted h6"
+                        >as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Sep, 2024</div>
+                    <div>
+                      Built highly performant website for text file compression.
+                      Worked with development team to implement Huffman coding
+                      concept using HTML, CSS and modern JavaScript.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-info"
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Student portal Website<span class="text-muted h6">
+                        as Project Based Learning</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">Jul, 2024</div>
+                    <div>
+                      This is a comprehensive website designed to streamline the
+                      signup and login process for students accessing
+                      educational resources and services. Developed with the aim
+                      of providing a seamless user experience, this offers
+                      robust features for user registration, authentication, and
+                      profile management, ensuring security and convenience for
+                      students and educators alike.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="shadow-1-strong bg-white my-5 p-5" id="education">
+            <div class="education-section">
+              <h2 class="h2 fw-light mb-4">Education</h2>
+              <div class="timeline">
+                <div
+                  class="timeline-card timeline-card-success"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Bachelor of Technology
+                      <span class="text-muted h6"
+                        >from Bharati vidyapeeth college of engineering</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">2022 - Present</div>
+                    <div>Studied in computer engineering discipline.</div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-success"
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Intermediate
+                      <span class="text-muted h6">from Vidya Niketan</span>
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">2019 - 2020</div>
+                    <div>Studied in science discipline</div>
+                  </div>
+                </div>
+                <div
+                  class="timeline-card timeline-card-success"
+                  data-aos="fade-in"
+                  data-aos-delay="400"
+                >
+                  <div class="timeline-head px-4 pt-3">
+                    <div class="h5">
+                      Matriculation
+                      <span class="text-muted h6"
+                        >from D.A.V Public School</span
+                      >
+                    </div>
+                  </div>
+                  <div class="timeline-body px-4 pb-4">
+                    <div class="text-muted text-small mb-3">2017-18</div>
+                    <div>
+                      Studied all the subjects which where important for science
+                      discipline.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-
-        <div id="content"></div>
-
-
-        <div class="shadow-1-strong bg-white my-5 p-5" id="references">
-          <div class="reference-section">
-            <h2 class="h2 fw-light mb-4">References</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="d-flex mb-2">
-                  <div class="avatar"><img src="images/reference.png" width="60" height="60" /></div>
-                  <div class="header-bio m-3 mb-0">
-                    <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Senior Professor</h3>
-                    <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Professor / Bharati
-                      vidyapeeth
+          <div
+            class="shadow-1-strong bg-white my-5 p-5 d-print-none"
+            id="portfolio"
+          >
+            <div class="portfolio-section">
+              <h2 class="h2 fw-light mb-4">Portfolio</h2>
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <a
+                    href="https://github.com/gyan007/Student-portal1"
+                    target="_blank"
+                    ><img
+                      class="img-fluid"
+                      src="images/project1.png"
+                      width="800"
+                      height="700"
+                  /></a>
+                </div>
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
+                  <div class="m-4 mt-md-2">
+                    <p class="text-teal text-small">
+                      Frontend / HTML / CSS / JavaScript / PHP
+                    </p>
+                    <h3>Student Portal Website</h3>
+                    <p class="text-muted">
+                      Built highly performant website front end for a Student
+                      portal. Delivered codebase in HTML, CSS and modern
+                      JavaScript.
                     </p>
                   </div>
                 </div>
-                <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-                  <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Gyan displays exemplary
-                    professionalism and is able to take on challenges. He learns quickly and is an asset to any team.
-                  </p>
-                </div>
               </div>
-              <div class="col-md-6">
-                <div class="d-flex mb-2">
-                  <div class="avatar"><img src="images/reference.png" width="60" height="60" /></div>
-                  <div class="header-bio m-3 mb-0">
-                    <h3 class="h6 mb-1" data-aos="fade-left" data-aos-delay="0">Senior Professor</h3>
-                    <p class="text-muted text-small" data-aos="fade-left" data-aos-delay="100">Professor / Bharati
-                      vidyapeeth</p>
+              <div class="row g-0 portfolio-reverse">
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                  data-aos="fade-right"
+                  data-aos-delay="100"
+                >
+                  <div class="m-4 mt-md-2 text-end">
+                    <p class="text-teal text-small">
+                      Frontend / HTML / CSS / JavaScript
+                    </p>
+                    <h3>Portfolio website</h3>
+                    <p class="text-muted">
+                      Built highly performant website for my portfolio. Worked
+                      on front-end deliver codebase in HTML, CSS and modern
+                      JavaScript.
+                    </p>
                   </div>
                 </div>
-                <div class="d-flex"><i class="text-secondary fas fa-quote-left"></i>
-                  <p class="lead mx-2" data-aos="fade-left" data-aos-delay="100">Gyan is a great student and problem
-                    solver. He is quick to extend his helping hand and makes a good team player.</p>
+                <div class="col-md-6">
+                  <a
+                    href="https://gyan007.github.io/Gyan-s-Portfolio/"
+                    target="_blank"
+                    ><img
+                      class="img-fluid"
+                      src="images/project2.png"
+                      width="800"
+                      height="500"
+                  /></a>
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <a
+                    href="https://gyan007.github.io/Text-compressor/"
+                    target="_blank"
+                    ><img
+                      class="img-fluid"
+                      src="images/project-3.png"
+                      width="800"
+                      height="500"
+                  /></a>
+                </div>
+                <div
+                  class="col-md-6 d-flex align-items-center"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
+                  <div class="m-4 mt-md-2">
+                    <p class="text-teal text-small">
+                      Frontend / HTML / CSS / JavaScript / PHP
+                    </p>
+                    <h3>Text File Compressor</h3>
+                    <p class="text-muted">
+                      Built highly performant website for text file compression.
+                      Worked with development team to implement Huffman coding
+                      concept using HTML, CSS and modern JavaScript.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
-          <div class="contant-section">
-            <h2 class="h2 fw-light text mb-4">Contact</h2>
-            <div class="row mb-4">
-              <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
-                <div class="mt-1">
-                  <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-                    +91-7016184175</div>
-                  <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i>
-                    gyanthakurthakur@gmail.com</div>
+
+          <div id="content"></div>
+
+          <div class="shadow-1-strong bg-white my-5 p-5" id="references">
+            <div class="reference-section">
+              <h2 class="h2 fw-light mb-4">References</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="d-flex mb-2">
+                    <div class="avatar">
+                      <img src="images/reference.png" width="60" height="60" />
+                    </div>
+                    <div class="header-bio m-3 mb-0">
+                      <h3
+                        class="h6 mb-1"
+                        data-aos="fade-left"
+                        data-aos-delay="0"
+                      >
+                        Senior Professor
+                      </h3>
+                      <p
+                        class="text-muted text-small"
+                        data-aos="fade-left"
+                        data-aos-delay="100"
+                      >
+                        Professor / Bharati vidyapeeth
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <i class="text-secondary fas fa-quote-left"></i>
+                    <p
+                      class="lead mx-2"
+                      data-aos="fade-left"
+                      data-aos-delay="100"
+                    >
+                      Gyan displays exemplary professionalism and is able to
+                      take on challenges. He learns quickly and is an asset to
+                      any team.
+                    </p>
+                  </div>
                 </div>
-                <div class="mt-5 d-print-none">
-                  <form action="https://formspree.io/f/mnqeworw" method="POST">
-                    <label>
-                      Your email:
-                      <input type="email" name="email">
-                    </label>
-                    <label>
-                      Your message:
-                      <textarea name="message"></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button type="submit">Send</button>
-                  </form>
+                <div class="col-md-6">
+                  <div class="d-flex mb-2">
+                    <div class="avatar">
+                      <img src="images/reference.png" width="60" height="60" />
+                    </div>
+                    <div class="header-bio m-3 mb-0">
+                      <h3
+                        class="h6 mb-1"
+                        data-aos="fade-left"
+                        data-aos-delay="0"
+                      >
+                        Senior Professor
+                      </h3>
+                      <p
+                        class="text-muted text-small"
+                        data-aos="fade-left"
+                        data-aos-delay="100"
+                      >
+                        Professor / Bharati vidyapeeth
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <i class="text-secondary fas fa-quote-left"></i>
+                    <p
+                      class="lead mx-2"
+                      data-aos="fade-left"
+                      data-aos-delay="100"
+                    >
+                      Gyan is a great student and problem solver. He is quick to
+                      extend his helping hand and makes a good team player.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100"><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.686058595145!2d73.8295808!3d18.5401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0713c39649%3A0x9734de3c6d8f59c2!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1646670001129!5m2!1sen!2sin"
-                  width="500" height="400" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="shadow-1-strong bg-white my-5 p-5" id="contact">
+            <div class="contant-section">
+              <h2 class="h2 fw-light text mb-4">Contact</h2>
+              <div class="row mb-4">
+                <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+                  <div class="mt-1">
+                    <div class="h6">
+                      <i
+                        class="fas fa-phone pe-2 text-muted"
+                        style="width: 24px; opacity: 0.85"
+                      ></i>
+                      +91-7016184175
+                    </div>
+                    <div class="h6">
+                      <i
+                        class="far fa-envelope pe-2 text-muted"
+                        style="width: 24px; opacity: 0.85"
+                      ></i>
+                      gyanthakurthakur@gmail.com
+                    </div>
+                  </div>
+                  <div class="mt-5 d-print-none">
+                    <form
+                      action="https://formspree.io/f/mnqeworw"
+                      method="POST"
+                    >
+                      <label>
+                        Your email:
+                        <input type="email" name="email" />
+                      </label>
+                      <label>
+                        Your message:
+                        <textarea name="message"></textarea>
+                      </label>
+                      <!-- your other form fields go here -->
+                      <button type="submit">Send</button>
+                    </form>
+                  </div>
+                </div>
+                <div
+                  class="col-md-7 d-print-none"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.686058595145!2d73.8295808!3d18.5401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0713c39649%3A0x9734de3c6d8f59c2!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1646670001129!5m2!1sen!2sin"
+                    width="500"
+                    height="400"
+                    style="border: 0; width: 100%"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <footer class="pt-4 pb-4 text-muted text-center d-print-none">
-    <div class="container">
-      <div class="my-3">
-        <div class="h4">Gyan Thakur</div>
-        <div class="footer-nav">
-          <nav role="navigation">
-            <ul class="nav justify-content-center">
-              <li class="nav-item"><a class="nav-link" href="https://twitter.com/gboundela" title="Twitter"><i
-                    class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/gyanush_boundela"
-                  title="Facebook"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/sarcastic_introvert_007"
-                  title="Instagram"><i class="fab fa-instagram"></i><span
-                    class="menu-title sr-only">Instagram</span></a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/gyan007" title="Github"><i
-                    class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
-              </li>
-            </ul>
-          </nav>
+    <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+      <div class="container">
+        <div class="my-3">
+          <div class="h4">Gyan Thakur</div>
+          <div class="footer-nav">
+            <nav role="navigation">
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://twitter.com/gboundela"
+                    title="Twitter"
+                    ><i class="fab fa-twitter"></i
+                    ><span class="menu-title sr-only">Twitter</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.facebook.com/gyanush_boundela"
+                    title="Facebook"
+                    ><i class="fab fa-facebook"></i
+                    ><span class="menu-title sr-only">Facebook</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://www.instagram.com/sarcastic_introvert_007"
+                    title="Instagram"
+                    ><i class="fab fa-instagram"></i
+                    ><span class="menu-title sr-only">Instagram</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="https://github.com/gyan007"
+                    title="Github"
+                    ><i class="fab fa-github"></i
+                    ><span class="menu-title sr-only">Github</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="text-small">
+          <div class="mb-1">&copy; Gyan. All rights reserved.</div>
         </div>
       </div>
-      <div class="text-small">
-        <div class="mb-1">&copy; Gyan. All rights reserved.</div>
-      </div>
-    </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="32"
-        height="32" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
-        <path
-          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
-      </svg></button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-arrow-up-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"
+          />
+        </svg>
+      </button>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      // Get the button element
+      let mybutton = document.getElementById("myBtn");
 
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="scripts/aos.js"></script>
-  <script src="scripts/main.js"></script>
-  <script>
+      // Show the button when the user scrolls down 20px from the top
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-    // Get the button element
-    let mybutton = document.getElementById("myBtn");
-
-    // Show the button when the user scrolls down 20px from the top
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
       }
-    }
 
-
-    function loadContent() {
-      fetch('project.html')
-          .then(response => response.text())
-          .then(data => {
-              document.getElementById('content').innerHTML = data;
+      function loadContent() {
+        fetch("project.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("content").innerHTML = data;
           })
-          .catch(error => console.error('Error loading content:', error));
-  }
-  // Call the function to load content
-  loadContent();
+          .catch((error) => console.error("Error loading content:", error));
+      }
+      // Call the function to load content
+      loadContent();
 
-
-
-    // Scroll to the top of the document when the button is clicked
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-    }
-
-  </script>
-</body>
-
+      // Scroll to the top of the document when the button is clicked
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      }
+    </script>
+  </body>
 </html>
