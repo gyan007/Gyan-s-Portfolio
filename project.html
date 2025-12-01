@@ -10,36 +10,39 @@
           }
     
           .card:hover {
-            transform: translateY(-10px) scale(1.05);
-            /* Makes card pop up */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            /* Adds shadow for a 3D effect */
+            transform: translateY(-10px) scale(1.05); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
           }
-    
-          /* Remove initial hidden state of images and card body */
+     
           .card img {
             transform: scale(1);
-            transition: transform 0.5s ease;
-            /* Smooth scaling effect */
+            transition: transform 0.5s ease; 
           }
     
           .card-body {
             opacity: 1;
             transition: opacity 0.5s ease, transform 0.5s ease;
           }
-    
-          /* Button hover effect */
+     
+          .card-body{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+          }
+
+          .d-flex {
+            margin-top: auto;
+          }
+
           .btn-group button {
-            transition: background-color 0.3s ease, color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease; 
           }
     
           .btn-group button:hover {
             background-color: #007bff;
-            color: white;
-            /* Button style changes on hover */
+            color: white; 
           }
-    
-          /* Additional styles to structure the page */
+     
           .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -66,6 +69,7 @@
             border-radius: 8px;
             overflow: hidden;
             padding: 10px;
+            height: 550px;
           }       
     </style>
 </head>
@@ -76,6 +80,85 @@
           <div class="container">
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+ 
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/DataScienceProfessional.png" alt="Oracle Cloud Infrastructure 2025 Certified Data Science Professional">
+                  <div class="card-body">
+                    <h5>Oracle Cloud Infrastructure 2025 Certified Data Science Professional - Oracle</h5>
+                    <p class="card-text">In this course, I learned about data analysis, statistical methods,
+                      machine learning algorithms, visualization, big data processing.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=49254A63C01AF2406B4E8D8CEB416C6FD673E27BBC9680D475FEB6DDDEACA2DD">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/AFoundationsAssociate.png" alt="Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate">
+                  <div class="card-body">
+                    <h5>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate - Oracle</h5>
+                    <p class="card-text">In this course, I learned about data analysis, statistical methods,
+                      machine learning algorithms, visualization, big data processing.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E5B79A11D7F374A491F35FF2BDF176B14FBDC81B931364F3C708522405AEF697">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/GenerativeAIProfessional.png" alt="Oracle Cloud Infrastructure 2025 Certified Generative AI Professional">
+                  <div class="card-body">
+                    <h5>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional - Oracle</h5>
+                    <p class="card-text">In this course, I learned about data analysis, statistical methods,
+                      machine learning algorithms, visualization, big data processing.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=935606AA9B8A3D79B2B7A9A09D21F4E19C7A66BFB2687CEC2F10F23B700DB706">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="./images/CloudFoundationAssociate.png" alt="Oracle Cloud Infrastructure 2025 Certified Foundations Associate">
+                  <div class="card-body">
+                    <h5>Oracle Cloud Infrastructure 2025 Certified Foundations Associate - Oracle</h5>
+                    <p class="card-text">In this course, I learned about data analysis, statistical methods,
+                      machine learning algorithms, visualization, big data processing.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <a
+                          href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=3B13537B97E7B5F6CB4D321D26C2867AF7CB618E4C1ABDC3BA6CEF2EA7173B60">
+                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
 
               <!-- Certificate 1 -->
               <div class="col">
@@ -192,27 +275,6 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                         <a href="https://www.coursera.org/account/accomplishments/verify/BPWIFXD2VYC5">
-                          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <!-- Certificate 7 -->
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img src="./images/java crash course.png" alt="Java Training Crash Course">
-                  <div class="card-body">
-                    <h5>Java Training Course - Udemy</h5>
-                    <p class="card-text">In this course, I learned the core concepts of Java programming,
-                      variables, loops, conditional statements, object-oriented
-                      programming, and data structures.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <a href="https://www.udemy.com/certificate/UC-ea4d4cd2-4a1a-4572-ad8a-174998264f86/">
                           <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                         </a>
                       </div>
